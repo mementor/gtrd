@@ -8,4 +8,8 @@ package com.meriman.gtrd;
 public class Coord {
     public int x;
     public int y;
+
+    public double distanceTo(Coord remoteCoord) {
+        return Math.sqrt(Math.pow(remoteCoord.x-x,2)+Math.pow(remoteCoord.y-y,2));
+    }
 }
